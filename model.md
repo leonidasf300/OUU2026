@@ -5,16 +5,16 @@
 
 ## Sets
 
-* $R$: Represents the relays in the system.
+* $R$: Set of relays in the system.
 * $F$: Set of faults detected by each relay in each operating mode.
 * $C$: Set of standard curves.
 
 ## Parameters
 
-* $A_c$, $B_c$, $C_c$ Standard curve parameters.
-* $TMS_{ub}$, $TMS_{lb}$: TMS upper and lower bounds.
-* $ICC_{if}$: Short circuit current seems by relay i in fault f.
-* $Ipickup_i$: Pickup current by each realy $i \in R$
+* $A_c$, $B_c$, $C_c$ Standard curve parameters for curve $c \in C$.
+* $TMS_{ub}$, $TMS_{lb}$: TMS upper and lower bounds for the TMS.
+* $ICC_{if}$: Short-circuit current seen by relay i during fault f.
+* $Ipickup_i$: Pickup current for relay $i \in R$
 * Backup relay matrix:
 
 $$BU_{ij} = 
@@ -23,7 +23,7 @@ $$BU_{ij} =
 0, & \text{relay } j \text{ is NOT the backup of relay } i \quad \forall i,j \in R 
 \end{cases}$$
 
-## Variable decision
+## Decision variables
 
 * $TMS_{ic}$: Time Multiplier Setting 
 * $x_{ic}$: Auxiliary Binary variable
