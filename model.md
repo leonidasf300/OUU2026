@@ -6,11 +6,28 @@
 * $F$: Set of faults detected by each relay in each operating mode.
 * $C$: Set of standard curves.
 
+\begin{equation}
+    \label{eq_PSM2}
+    PSM_{if} = \frac{ICC_{if}}{Ipickup_{i}} \quad \forall \quad i \in R, \quad f \in F
+\end{equation}
+
+\begin{equation}
+\label{eq_beta}
+    \beta_{fic} = \frac{A_c}{ PSM_{if}^{B_c} - 1 } \quad \forall \quad i \in R, \quad f \in F, \quad c \in C
+\end{equation}
+
+**Backup relay matrix:**
+
+$$BU_{ij} = 
+\begin{cases} 
+1, & \text{relay } j \text{ is the backup of relay } i \quad \forall i,j \in R \\ 
+0, & \text{relay } j \text{ is NOT the backup of relay } i \quad \forall i,j \in R 
+\end{cases}$$
 
 **Objective Function:**
 
 
-$$\minimize \sum_{i \in R} \sum_{f \in F} t_{if}$$
+$$minimize \sum_{i \in R} \sum_{f \in F} t_{if}$$
 
 **Subject to:**
 
