@@ -45,7 +45,7 @@ $$minimize \sum_{c \in C} \sum_{i \in R} \sum_{f \in F} \frac{A_c}{ \left(\frac{
 $$
 \sum_{c \in C} 
 \left[\left(\frac{A_c}{ \left(\frac{ICC_{jf}}{Ipickup_{j}}\right)^{B_c} - 1 } \right) TMS_{jc} + x_{jc} C_c \right]-
-\left[\left(\frac{A_c}{ \left(\frac{ICC_{if}}{Ipickup_{i}}\right)^{B_c} - 1 } \right) TMS_{ic} + x_{ic} C_c \right] \leq CTI 
+\left[\left(\frac{A_c}{ \left(\frac{ICC_{if}}{Ipickup_{i}}\right)^{B_c} - 1 } \right) TMS_{ic} + x_{ic} C_c \right] \geq CTI 
 \quad \forall i,j \in R: i \neq j, f \in F, \beta_{fic} \geq 0, \beta_{fjc} \geq 0, BU_{ij} = 1$$
 
 
