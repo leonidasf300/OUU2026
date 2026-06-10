@@ -6,6 +6,7 @@
 * $\beta_{fic} = \frac{A_c}{ \left(\frac{ICC_{if}}{Ipickup_{i} \cdot CTR_i}\right)^{B_c} - 1 }$
 * $f=1$
 * $\tilde{\beta}_{j,c} = \beta^0_c + \beta^l_c \zeta \quad \text{where } \zeta \in [-1,1] \text{ and } j \text{ is the backup relay}$
+* $\tilde{\beta_{j,q}} = k1_{c,q} + k1_{c,q} \tilde{\beta_{i,c}}$ 
 
 ## Sets
 
