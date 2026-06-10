@@ -5,7 +5,6 @@
 * $TMS_{ic} = y_{ic}$
 * $\beta_{fic} = \frac{A_c}{ \left(\frac{ICC_{if}}{Ipickup_{i} \cdot CTR_i}\right)^{B_c} - 1 }$
 * $f=1$
-* $c=1$
 * $\tilde{\beta}_{j,c} = \beta^0_c + \beta^l_c \zeta \quad \text{where } \zeta \in [-1,1] \text{ and } j \text{ is the backup relay}$
 
 ## Sets
